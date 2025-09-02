@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Splash</title>
-    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="./src/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
     <header class="navbar">
         <div class="nav-left">
             <div class="logo">
-                <img src="https://i.ibb.co/L5w2W6v/logo.png" alt="Splash Logo">
+                <img src="./src/photos/logo-splash.png" alt="Splash Logo">
                 <span>Splash</span>
             </div>
             <nav class="nav-links">
@@ -85,23 +85,144 @@
         </div>
     </section>
 
-    <section class="testimonial-section">
-        <div class="testimonial-card">
-            <div class="quote-icon">"</div>
-            <p>"Venda de fotos esportivas mudou minha vida e a Splash faz parte dessa mudança. é a melhor plataforma pra vender fotos!"</p>
-            <div class="testimonial-author">
-                <img src="https://i.ibb.co/30B37gG/vinicius-ricardo.png" alt="Foto de Vinicius Ricardo">
-                <div>
-                    <h4>Vinicius Ricardo</h4>
-                    <span>São Paulo, SP</span>
+
+
+    <section class="testimonial-cta-section">
+        <div class="container testimonial-cta-grid">
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <p class="testimonial-text">
+                    Venda de fotos esportivas mudou minha vida e a Splash faz parte dessa mudança, é a melhor plataforma para fotógrafos.
+                </p>
+                <div class="testimonial-author">
+                    <img src="https://via.placeholder.com/40" alt="Avatar de Vinicius Ricardo" class="author-avatar">
+                    <div class="author-info">
+                        <span class="author-name">Vinicius Ricardo</span>
+                        <span class="author-role">Videomaker</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-card">
+                <h2 class="cta-title">
+                    Na Splash, você faz parte de uma comunidade que cresce a cada dia. Juntos, nós fortalecemos o mercado fotográfico. Bora crescer juntos?
+                </h2>
+                <a href="#" class="cta-button">Começar →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Perguntas frequentes sobre a Splash e o que fazemos</h2>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>O que é a Splash? <span class="faq-icon"></span></summary>
+                    <div class="faq-content">
+                        <p>Aqui vai a resposta para a pergunta sobre o que é a Splash.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Como comprar minhas fotos? Remover a marca d'agua? <span class="faq-icon"></span></summary>
+                    <div class="faq-content">
+                        <p>Aqui vai a resposta sobre como comprar fotos e remover a marca d'água.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Quanto tempo minha foto fica disponível? <span class="faq-icon"></span></summary>
+                    <div class="faq-content">
+                        <p>Aqui vai a resposta sobre a disponibilidade das fotos.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Como encontrar e contratar um fotógrafo? <span class="faq-icon"></span></summary>
+                    <div class="faq-content">
+                        <p>Aqui vai a resposta sobre como encontrar e contratar fotógrafos.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Como ser um fotógrafo parceiro da Splash? <span class="faq-icon"></span></summary>
+                    <div class="faq-content">
+                        <p>Aqui vai a resposta sobre como se tornar um fotógrafo parceiro.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="locations-section">
+        <div class="container">
+            <h2 class="section-title">Encontre fotógrafos em todo o Brasil! <span class="flag-br">🇧🇷</span></h2>
+            <ul class="locations-list">
+                <li><a href="#">São Paulo</a></li>
+                <li><a href="#">Rio de Janeiro</a></li>
+                <li><a href="#">Belo Horizonte</a></li>
+                <li><a href="#">Porto Alegre</a></li>
+                <li><a href="#">Salvador</a></li>
+                <li><a href="#">Curitiba</a></li>
+                <li><a href="#">Fortaleza</a></li>
+                <li><a href="#">Brasília</a></li>
+                <li><a href="#">Recife</a></li>
+                <li><a href="#">Belém</a></li>
+                <li><a href="#">Goiânia</a></li>
+                <li><a href="#">Campinas</a></li>
+                <li><a href="#">São Luís</a></li>
+                <li><a href="#">Maceió</a></li>
+                <li><a href="#">Natal</a></li>
+                <li><a href="#">João Pessoa</a></li>
+                <li><a href="#">Teresina</a></li>
+                <li><a href="#">Florianópolis</a></li>
+                <li><a href="#">Aracaju</a></li>
+                <li><a href="#">Cuiabá</a></li>
+                <li><a href="#">Vitória</a></li>
+                <li><a href="#">Macapá</a></li>
+                <li><a href="#">Campo Grande</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-about">
+                    <h3 class="footer-logo">Splash</h3>
+                    <p>A Splash é uma startup de fotografia que conecta fotógrafos a clientes finais de um jeito simples e prático, gerando oportunidade para ambos os lados e movimentando o mercado.</p>
+                    <p class="cnpj">CNPJ: 26.699.809/0001-91</p>
+                    <p class="address">Endereço: Rua Hildebrando de Araújo, 990 / 01<br>Cubatão, Petrópolis, RJ<br>CEP: 25710-125</p>
+                </div>
+                <div class="footer-links-wrapper">
+                    <div class="footer-links-col">
+                        <h4>Nossos serviços</h4>
+                        <ul>
+                            <li><a href="#">Venda de fotos de eventos</a></li>
+                            <li><a href="#">Venda de fotos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-col">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="#">Quem somos</a></li>
+                            <li><a href="#">Seja um parceiro</a></li>
+                            <li><a href="#">Suporte</a></li>
+                            <li><a href="#">Termos de uso</a></li>
+                            <li><a href="#">Política de privacidade</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <p>© 2025 Splash. Todos os direitos reservados</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="TikTok">🎵</a>
+                    <a href="#" aria-label="LinkedIn">🔗</a>
+                    <a href="#" aria-label="YouTube">▶️</a>
+                    <a href="#" aria-label="Facebook">👍</a>
                 </div>
             </div>
         </div>
-        <div class="promo-card">
-            <h2>Na Splash, você faz parte de uma comunidade que apoia seu talento. Juntos, crescemos e fortalecemos o mercado fotográfico. Bora crescer juntos!</h2>
-            <a href="#" class="btn btn-start">Quero começar</a>
-        </div>
-    </section>
+    </footer>
 
 </body>
 </html>
