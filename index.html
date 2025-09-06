@@ -7,218 +7,165 @@
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="nav-left">
-            <div class="logo">
-                <img src="./src/photos/logo-splash.png" alt="Splash Logo">
-                <span>Splash</span>
-            </div>
-            <nav class="nav-links">
+    <header class="main-header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="./src/photos/logo-splash.png" alt="Logo Splash" class="logo-img" width="100" height="26">
+            </a>
+            <nav class="main-nav">
                 <a href="#">Buscar fotos</a>
                 <a href="#">Vender fotos</a>
-                <a href="#">Serviços ▾</a>
+                <div class="search-box">
+                    <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="Ícone de busca" class="search-icon" width="16" height="16">
+                    <input type="text" placeholder="Pesquise suas fotos...">
+                </div>
+                <a href="#">Baixar fotos</a>
+                <a href="#" class="btn btn-outline-white">Entrar</a>
+                <a href="#" class="btn btn-primary">Criar conta</a>
             </nav>
-        </div>
-        <div class="nav-right">
-            <a href="#" class="btn btn-download">Baixar fotos</a>
-            <a href="#" class="btn btn-login">Entrar</a>
-            <a href="#" class="btn btn-primary">Criar conta</a>
-            <div class="cart">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+            <div class="cart-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Ícone do carrinho" class="cart-img" width="20" height="20">
                 <span>Carrinho</span>
-            </div>
-            <div class="language">
-                <span>🇧🇷</span>
-                <span class="language-dropdown">▾</span>
             </div>
         </div>
     </header>
 
-    <div class="hero-section">
-        <h1>Encontre e compre suas fotos praticando suas atividades favoritas.</h1>
-        <div class="search-bar">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-            <input type="text" placeholder="Pesquise suas fotos...">
-        </div>
-    </div>
-
-    <section class="categories-section">
-        <div class="categories-header">
-            <h2>Categorias</h2>
-            <a href="#" class="explore-link">Explore todas as categorias</a>
-        </div>
-        <div class="categories-grid">
-            <div class="category-item"><h3>Futebol</h3></div>
-            <div class="category-item"><h3>Crossfit</h3></div>
-            <div class="category-item"><h3>Ciclismo</h3></div>
-            <div class="category-item"><h3>Beach Tennis</h3></div>
-            <div class="category-item"><h3>Futsal</h3></div>
-            <div class="category-item"><h3>Corrida</h3></div>
-            <div class="category-item"><h3>Natação</h3></div>
-            <div class="category-item"><h3>Vôlei</h3></div>
-            <div class="category-item"><h3>Futevôlei</h3></div>
-            <div class="category-item"><h3>Eventos</h3></div>
-            <div class="category-item"><h3>Basquete</h3></div>
-            <div class="category-item"><h3>Artes Marciais</h3></div>
-            <div class="category-item"><h3>Surf</h3></div>
-            <div class="category-item"><h3>Motociclismo</h3></div>
-            <div class="category-item"><h3>Formaturas</h3></div>
-            <div class="category-item"><h3>Jiu-jitsu</h3></div>
-            <div class="category-item"><h3>Grau</h3></div>
-            <div class="category-item"><h3>Padel</h3></div>
-            <div class="category-item"><h3>Teatro e Musicais</h3></div>
-            <div class="category-item"><h3>Tenis</h3></div>
-            <div class="category-item"><h3>Canoa Havaiana</h3></div>
-            <div class="category-item"><h3>Festas</h3></div>
-            <div class="category-item"><h3>Automotiva</h3></div>
-            <div class="category-item"><h3>Montain Bike</h3></div>
-            <div class="category-item"><h3>Treinos</h3></div>
-            <div class="category-item"><h3>Ginástica</h3></div>
-            <div class="category-item"><h3>Hipismo</h3></div>
-            <div class="category-item"><h3>Kite Surf</h3></div>
-            <div class="category-item"><h3>Trilhas</h3></div>
-            <div class="category-item"><h3>Altinha</h3></div>
-        </div>
-    </section>
-
-
-
-    <section class="testimonial-cta-section">
-        <div class="container testimonial-cta-grid">
-            <div class="testimonial-card">
-                <div class="quote-icon">"</div>
-                <p class="testimonial-text">
-                    Venda de fotos esportivas mudou minha vida e a Splash faz parte dessa mudança, é a melhor plataforma para fotógrafos.
-                </p>
-                <div class="testimonial-author">
-                    <img src="https://via.placeholder.com/40" alt="Avatar de Vinicius Ricardo" class="author-avatar">
-                    <div class="author-info">
-                        <span class="author-name">Vinicius Ricardo</span>
-                        <span class="author-role">Videomaker</span>
-                    </div>
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h1>Encontre e compre as melhores fotos fazendo o que você mais gosta.</h1>
+                <div class="hero-search-box">
+                    <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="Ícone de busca" class="search-icon" width="24" height="24">
+                    <input type="text" placeholder="Pesquise suas fotos...">
                 </div>
             </div>
+        </section>
+    </main>
 
-            <div class="cta-card">
-                <h2 class="cta-title">
-                    Na Splash, você faz parte de uma comunidade que cresce a cada dia. Juntos, nós fortalecemos o mercado fotográfico. Bora crescer juntos?
-                </h2>
-                <a href="#" class="cta-button">Começar →</a>
+    <section class="secao-categorias">
+        <div class="container">
+            <div class="cabecalho-secao">
+                <h2>Categorias</h2>
+                <a href="#" class="link-acao">Explore todas as categorias</a>
+            </div>
+            <div class="grid-categorias">
+                <div class="cartao-categoria"><span>Futebol</span></div>
+                <div class="cartao-categoria"><span>Crossfit</span></div>
+                <div class="cartao-categoria"><span>Ciclismo</span></div>
+                <div class="cartao-categoria"><span>Beach Tennis</span></div>
+                <div class="cartao-categoria"><span>Futsal</span></div>
+                <div class="cartao-categoria"><span>Corrida</span></div>
+                <div class="cartao-categoria"><span>Natação</span></div>
+                <div class="cartao-categoria"><span>Vôlei</span></div>
+                <div class="cartao-categoria"><span>Futevôlei</span></div>
+                <div class="cartao-categoria"><span>Eventos</span></div>
+                <div class="cartao-categoria"><span>Basquete</span></div>
+                <div class="cartao-categoria"><span>Artes Marciais</span></div>
             </div>
         </div>
     </section>
 
-    <section class="faq-section">
-        <div class="container">
-            <h2 class="section-title">Perguntas frequentes sobre a Splash e o que fazemos</h2>
-            <div class="faq-list">
-                <details class="faq-item">
-                    <summary>O que é a Splash? <span class="faq-icon"></span></summary>
-                    <div class="faq-content">
-                        <p>Aqui vai a resposta para a pergunta sobre o que é a Splash.</p>
-                    </div>
-                </details>
-                <details class="faq-item">
-                    <summary>Como comprar minhas fotos? Remover a marca d'agua? <span class="faq-icon"></span></summary>
-                    <div class="faq-content">
-                        <p>Aqui vai a resposta sobre como comprar fotos e remover a marca d'água.</p>
-                    </div>
-                </details>
-                <details class="faq-item">
-                    <summary>Quanto tempo minha foto fica disponível? <span class="faq-icon"></span></summary>
-                    <div class="faq-content">
-                        <p>Aqui vai a resposta sobre a disponibilidade das fotos.</p>
-                    </div>
-                </details>
-                <details class="faq-item">
-                    <summary>Como encontrar e contratar um fotógrafo? <span class="faq-icon"></span></summary>
-                    <div class="faq-content">
-                        <p>Aqui vai a resposta sobre como encontrar e contratar fotógrafos.</p>
-                    </div>
-                </details>
-                <details class="faq-item">
-                    <summary>Como ser um fotógrafo parceiro da Splash? <span class="faq-icon"></span></summary>
-                    <div class="faq-content">
-                        <p>Aqui vai a resposta sobre como se tornar um fotógrafo parceiro.</p>
-                    </div>
-                </details>
-            </div>
-        </div>
-    </section>
-
-    <section class="locations-section">
-        <div class="container">
-            <h2 class="section-title">Encontre fotógrafos em todo o Brasil! <span class="flag-br">🇧🇷</span></h2>
-            <ul class="locations-list">
-                <li><a href="#">São Paulo</a></li>
-                <li><a href="#">Rio de Janeiro</a></li>
-                <li><a href="#">Belo Horizonte</a></li>
-                <li><a href="#">Porto Alegre</a></li>
-                <li><a href="#">Salvador</a></li>
-                <li><a href="#">Curitiba</a></li>
-                <li><a href="#">Fortaleza</a></li>
-                <li><a href="#">Brasília</a></li>
-                <li><a href="#">Recife</a></li>
-                <li><a href="#">Belém</a></li>
-                <li><a href="#">Goiânia</a></li>
-                <li><a href="#">Campinas</a></li>
-                <li><a href="#">São Luís</a></li>
-                <li><a href="#">Maceió</a></li>
-                <li><a href="#">Natal</a></li>
-                <li><a href="#">João Pessoa</a></li>
-                <li><a href="#">Teresina</a></li>
-                <li><a href="#">Florianópolis</a></li>
-                <li><a href="#">Aracaju</a></li>
-                <li><a href="#">Cuiabá</a></li>
-                <li><a href="#">Vitória</a></li>
-                <li><a href="#">Macapá</a></li>
-                <li><a href="#">Campo Grande</a></li>
-            </ul>
-        </div>
-    </section>
-
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-about">
-                    <h3 class="footer-logo">Splash</h3>
-                    <p>A Splash é uma startup de fotografia que conecta fotógrafos a clientes finais de um jeito simples e prático, gerando oportunidade para ambos os lados e movimentando o mercado.</p>
-                    <p class="cnpj">CNPJ: 26.699.809/0001-91</p>
-                    <p class="address">Endereço: Rua Hildebrando de Araújo, 990 / 01<br>Cubatão, Petrópolis, RJ<br>CEP: 25710-125</p>
-                </div>
-                <div class="footer-links-wrapper">
-                    <div class="footer-links-col">
-                        <h4>Nossos serviços</h4>
-                        <ul>
-                            <li><a href="#">Venda de fotos de eventos</a></li>
-                            <li><a href="#">Venda de fotos</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-links-col">
-                        <h4>Empresa</h4>
-                        <ul>
-                            <li><a href="#">Quem somos</a></li>
-                            <li><a href="#">Seja um parceiro</a></li>
-                            <li><a href="#">Suporte</a></li>
-                            <li><a href="#">Termos de uso</a></li>
-                            <li><a href="#">Política de privacidade</a></li>
-                        </ul>
-                    </div>
+    <section class="secao-depoimento-cta">
+        <div class="coluna-depoimento">
+            <span class="icone-aspas">“</span>
+            <p class="texto-depoimento">
+                “Venda de fotos esportivas mudou minha vida e a Splash faz parte dessa mudança, é a melhor plataforma pra <strong>vender fotos!</strong>”
+            </p>
+            <div class="autor-depoimento">
+                <img src="https://i.pravatar.cc/60" alt="Foto de Vinicius Ricardo" class="avatar-autor">
+                <div class="info-autor">
+                    <span class="nome-autor">Vinicius Ricardo</span>
+                    <span class="localizacao-autor">São Paulo, SP</span>
                 </div>
             </div>
-            <hr class="footer-divider">
-            <div class="footer-bottom">
-                <p>© 2025 Splash. Todos os direitos reservados</p>
-                <div class="social-icons">
-                    <a href="#" aria-label="Instagram">📷</a>
-                    <a href="#" aria-label="TikTok">🎵</a>
-                    <a href="#" aria-label="LinkedIn">🔗</a>
-                    <a href="#" aria-label="YouTube">▶️</a>
-                    <a href="#" aria-label="Facebook">👍</a>
+        </div>
+        <div class="coluna-cta">
+            <h2 class="texto-cta">
+                Na Splash, você faz parte de uma comunidade que apoia seu talento. Juntos, crescemos e fortalecemos o mercado fotográfico. Bora crescer juntos!
+            </h2>
+            <a href="#" class="botao-cta">
+                Quero começar
+            </a>
+        </div>
+    </section>
+
+    <section class="secao-faq">
+        <div class="container">
+            <div class="conteudo-faq">
+                <div class="titulo-faq">
+                    <h2>Perguntas frequentes sobre a Splash e o que fazemos</h2>
+                    <img src="./src/photos/faq_img.png" alt="Imagem relacionada a FAQ" class="imagem-faq">
+                </div>
+                <div class="lista-faq">
+                    <details>
+                        <summary>O que é a Splash?</summary>
+                        <p>A Splash é uma plataforma completa que conecta fotógrafos a clientes, facilitando a venda e a compra de fotos de eventos de forma simples e segura.</p>
+                    </details>
+                    <details>
+                        <summary>Como comprar minhas fotos? Remover a marca d'água?</summary>
+                        <p>Após encontrar suas fotos no evento, adicione-as ao carrinho e finalize a compra. A marca d'água é removida automaticamente dos arquivos digitais após a confirmação do pagamento.</p>
+                    </details>
+                    <details>
+                        <summary>Quanto tempo minha foto fica disponível?</summary>
+                        <p>As fotos permanecem disponíveis na plataforma por tempo indeterminado, a critério do fotógrafo responsável pela cobertura do evento.</p>
+                    </details>
+                    <details>
+                        <summary>Como encontrar e contratar um fotógrafo?</summary>
+                        <p>Você pode explorar nosso diretório de fotógrafos parceiros, visualizar seus portfólios e entrar em contato diretamente pela plataforma para solicitar orçamentos e agendar serviços.</p>
+                    </details>
+                    <details>
+                        <summary>Como ser um fotógrafo parceiro da Splash?</summary>
+                        <p>Se você é fotógrafo e deseja vender suas fotos em nossa plataforma, clique em "Vender fotos" no menu principal e siga as instruções para criar seu perfil e enviar seu portfólio para análise.</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodape-principal">
+        <div class="container">
+            <div class="grid-rodape">
+                <div class="coluna-rodape">
+                    <div class="logo-rodape">
+                        <img src="./src/photos/logo-splash.png" alt="Logo Splash" width="32" height="32">
+                        <span>SPLASH</span>
+                    </div>
+                    <p class="descricao-rodape">A Splash é uma startup de fotografia que conecta fotógrafos e clientes para venda de fotos online, com tecnologia de reconhecimento facial e suporte completo 24h.</p>
+                    <div class="info-empresa-rodape">
+                        <p><strong>Empresa</strong><br>SPLASH FOTOGRAFIAS.</p>
+                        <p><strong>CNPJ</strong><br>12.345.678/0001-10</p>
+                    </div>
+                </div>
+                <div class="coluna-rodape">
+                    <h4 class="titulo-coluna-rodape">Nossos serviços</h4>
+                    <ul>
+                        <li><a href="#">Fotógrafo para eventos</a></li>
+                        <li><a href="#">Venda de fotos</a></li>
+                    </ul>
+                </div>
+                <div class="coluna-rodape">
+                    <h4 class="titulo-coluna-rodape">Empresa</h4>
+                    <ul>
+                        <li><a href="#">Quem somos</a></li>
+                        <li><a href="#">Seja um parceiro</a></li>
+                        <li><a href="#">Suporte</a></li>
+                        <li><a href="#">Termos de uso</a></li>
+                        <li><a href="#">Política de privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sub-rodape">
+                <p class="copyright-rodape">© 2025 Splash. Todos os direitos reservados</p>
+                <div class="icones-sociais-rodape">
+                    <a href="#"><img src="https://via.placeholder.com/20x20/5A5A5A/FFFFFF?text=I" alt="Instagram"></a>
+                    <a href="#"><img src="https://via.placeholder.com/20x20/5A5A5A/FFFFFF?text=T" alt="TikTok"></a>
+                    <a href="#"><img src="https://via.placeholder.com/20x20/5A5A5A/FFFFFF?text=L" alt="LinkedIn"></a>
+                    <a href="#"><img src="https://via.placeholder.com/20x20/5A5A5A/FFFFFF?text=F" alt="Facebook"></a>
+                    <a href="#"><img src="https://via.placeholder.com/20x20/5A5A5A/FFFFFF?text=Y" alt="YouTube"></a>
                 </div>
             </div>
         </div>
