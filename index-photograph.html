@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vender Fotos - Splash</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/style-photo.css">
+    
+</head>
+<body>
+
+    <header class="cabecalho-principal">
+        <div class="container">
+            <nav class="navegacao-principal">
+                <a href="index.html" class="logo">
+                    <img src="./src/photos/logo-splash.png" alt="Logo Splash" width="32" height="32">
+                    <span>SPLASH</span>
+                </a>
+                <div class="nav-links">
+                    <a href="#">Buscar fotos</a>
+                    <a href="#">Vender fotos</a>
+                </div>
+                <div class="caixa-busca">
+                    <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="busca">
+                    <input type="text" placeholder="Pesquise suas fotos...">
+                </div>
+            </nav>
+            <div class="acoes-usuario">
+                <a href="#">Baixar fotos</a>
+                <a href="#" class="botao botao-contorno">Entrar</a>
+                <a href="#" class="botao botao-preenchido">Criar conta</a>
+                <a href="#" class="carrinho-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="carrinho">
+                    <span>Carrinho</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="conteudo-principal">
+        <div class="container">
+            <div class="conteudo-dividido">
+                <div class="coluna-texto">
+                    <h1>A melhor plataforma para vender fotos online, a Splash conecta seu talento a quem valoriza seu trabalho.</h1>
+                    <p>Comece grátis!</p>
+                    <hr>
+                </div>
+                <div class="coluna-formulario">
+                    <form class="cartao-formulario">
+                        <div class="campo-formulario">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" placeholder="Digite seu nome">
+                        </div>
+                        <div class="campo-formulario">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" id="sobrenome" placeholder="Digite seu sobrenome">
+                        </div>
+                        <div class="campo-formulario">
+                            <label for="celular">Celular</label>
+                            <div class="campo-celular">
+                                <div class="seletor-pais">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/14009/14009874.png" alt="Bandeira do Brasil">
+                                </div>
+                                <input type="tel" id="celular" placeholder="(11) 91234-5678" maxlength="16">
+                            </div>
+                        </div>
+                        <div class="campo-formulario">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" placeholder="Digite seu e-mail">
+                        </div>
+                        <button type="submit" class="botao-principal">Próximo</button>
+                        <p class="texto-aviso">
+                            Ao criar e enviar o formulário você estará concordando com a <a href="#">Política de Privacidade</a> e os <a href="#">Termos de Serviço</a>.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="secao-destaque">
+        <div class="container">
+            <div class="icone-localizacao">
+                <img src="https://via.placeholder.com/20x20/00C49A/FFFFFF?text=L" alt="Ícone de localização">
+                <span>Seu lugar no mundo</span>
+            </div>
+            <h2 class="titulo-destaque">Plataforma mais utilizada para venda de fotos do Brasil.</h2>
+            <p class="subtitulo-destaque">Tenha tecnologia de ponta com reconhecimento facial e entrega instantânea, maximizando as oportunidades de vendas para fotógrafos</p>
+        </div>
+    </section>
+
+    <script>
+        const campoCelular = document.getElementById('celular');
+
+        campoCelular.addEventListener('input', function (e) {
+            let valor = e.target.value.replace(/\D/g, '');
+            let formatado = '';
+            
+            if (valor.length > 0) {
+                formatado = '(' + valor.substring(0, 2);
+            }
+            if (valor.length > 2) {
+                formatado += ') ' + valor.substring(2, 3);
+            }
+            if (valor.length > 3) {
+                formatado += '' + valor.substring(3, 7);
+            }
+            if (valor.length > 7) {
+                formatado += '-' + valor.substring(7, 11);
+            }
+            
+            e.target.value = formatado;
+        });
+    </script>
+
+</body>
+</html>
