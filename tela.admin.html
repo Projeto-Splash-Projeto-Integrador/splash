@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Splash</title>
+    
+    <link rel="stylesheet" href="./src/css/admin-style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <h1 class="logo-text">Splash</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#" class="active">Início</a></li>
+                <li><a href="#">Álbuns</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="pedidos.html">Financeiros</a></li>
+                <li><a href="#">Metas</a></li>
+                <li><a href="#">Cupom</a></li>
+                <li><a href="#">Cursos</a></li>
+            </ul>
+        </nav>
+        <div class="profile-container">
+            <i class="fas fa-search"></i>
+            <div class="profile-avatar"></div>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <main class="dashboard-content">
+        <div class="cta-banner">
+            <p>Fature mais! Conheça nossos planos de assinatura!</p>
+        </div>
+
+        <section class="stats-grid">
+            <div class="stat-card">
+                <i class="fas fa-dollar-sign icon"></i>
+                <div class="stat-info">
+                    <span class="stat-value">R$ 0,00</span>
+                    <span class="stat-label">Total de Ganhos</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-eye icon"></i>
+                <div class="stat-info">
+                    <span class="stat-value">0</span>
+                    <span class="stat-label">Visitas na Página</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-database icon"></i>
+                <div class="stat-info">
+                    <span class="stat-value">0 Bytes</span>
+                    <span class="stat-label">Espaço utilizado</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-shopping-cart icon"></i>
+                <div class="stat-info">
+                    <span class="stat-value">0</span>
+                    <span class="stat-label">Carrinhos ativos</span>
+                </div>
+            </div>
+            <div class="plan-card card">
+                <h4>Plano Grátis</h4>
+                <p>Assine qualquer plano e melhore seu faturamento!</p>
+                <a href="#">Escolher plano</a>
+            </div>
+        </section>
+
+        <section class="main-layout">
+            <div class="main-column">
+                <div class="card performance-card">
+                    <h3>Desempenho</h3>
+                    <div class="chart-placeholder">
+                        <p>Gráfico de Desempenho</p>
+                    </div>
+                </div>
+                <div class="bottom-cards-container">
+                    <div class="card">
+                        <h3>Últimas vendas</h3>
+                        <p class="placeholder-text">Nenhuma venda realizada</p>
+                    </div>
+                    <div class="card">
+                        <h3>Serviços</h3>
+                        <p class="placeholder-text">Nenhuma solicitação disponível</p>
+                    </div>
+                    <div class="card">
+                        <h3>Metas</h3>
+                        <p class="placeholder-text">Nenhuma meta definida</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-column">
+                <div class="card withdrawal-card">
+                    <div class="balance-header">
+                        <span class="balance-label">Disponível para saque</span>
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <p class="balance-amount">R$ 0,00</p>
+                    <div class="balance-details">
+                        <div>
+                            <span>Receita do mês</span>
+                            <strong>R$ 0,00</strong>
+                        </div>
+                        <div>
+                            <span>a receber</span>
+                            <strong>R$ 0,00</strong>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Efetuar saque</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

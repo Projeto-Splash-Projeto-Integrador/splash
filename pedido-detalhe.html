@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Pedido - Splash Admin</title>
+    <link rel="stylesheet" href="./src/css/users.admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-container"><h1 class="logo-text">Splash</h1></div>
+        <nav class="main-nav">
+             <ul>
+                <li><a href="tela.admin.html">Início</a></li>
+                <li><a href="#">Álbuns</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="pedidos.html" class="active">Financeiros</a></li>
+                <li><a href="#">Metas</a></li>
+                <li><a href="#">Cupom</a></li>
+                <li><a href="#">Cursos</a></li>
+            </ul>
+        </nav>
+        <div class="profile-container"><i class="fas fa-search"></i><div class="profile-avatar"></div><i class="fas fa-chevron-down"></i></div>
+    </header>
+
+    <main class="main-content">
+        <div class="page-header">
+            <h1>Detalhes do Pedido #12344</h1>
+        </div>
+        
+        <div class="two-column-layout">
+            <div class="main-column">
+                <div class="card detail-card">
+                    <h3>Itens do Pedido</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Produto</th>
+                                <th>Qtd.</th>
+                                <th>Preço Unit.</th>
+                                <th>Subtotal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Foto Impressa 10x15 Brilho</td>
+                                <td>10</td>
+                                <td>R$ 2,99</td>
+                                <td>R$ 29,90</td>
+                            </tr>
+                            <tr>
+                                <td>Álbum de Casamento 20pags</td>
+                                <td>1</td>
+                                <td>R$ 60,00</td>
+                                <td>R$ 60,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                 <div class="card detail-card">
+                    <h3>Informações do Cliente</h3>
+                    <p><strong>Nome:</strong> Ricardo Alves</p>
+                    <p><strong>Email:</strong> ricardo.alves@example.com</p>
+                    <p><strong>Endereço:</strong> Rua das Flores, 123, São Paulo - SP, 01234-567</p>
+                </div>
+            </div>
+            <div class="sidebar-column">
+                <div class="card detail-card">
+                    <h3>Resumo Financeiro</h3>
+                    <p><strong>Subtotal:</strong> R$ 89,90</p>
+                    <p><strong>Frete:</strong> R$ 15,00</p>
+                    <p><strong>Total:</strong> R$ 104,90</p>
+                    <p><strong>Status:</strong> <span class="status status-processando">Processando</span></p>
+                </div>
+                <div class="card detail-card">
+                    <h3>Ações</h3>
+                    <div class="form-group">
+                        <label for="status">Alterar Status</label>
+                        <select id="status">
+                            <option>Processando</option>
+                            <option>Enviado</option>
+                            <option>Concluído</option>
+                            <option>Cancelado</option>
+                        </select>
+                    </div>
+                    <div class="form-actions" style="padding-top:1rem; border:none; text-align:left;">
+                        <button class="btn-primary">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

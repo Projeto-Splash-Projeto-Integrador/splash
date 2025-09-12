@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários - Splash Admin</title>
+    <link rel="stylesheet" href="./src/css/users.admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-container"><h1 class="logo-text">Splash</h1></div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="dashboard.html">Início</a></li>
+                <li><a href="#">Álbuns</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="pedidos.html">Financeiros</a></li>
+                <li><a href="#">Metas</a></li>
+                <li><a href="#">Cupom</a></li>
+                <li><a href="#">Cursos</a></li>
+            </ul>
+        </nav>
+        <div class="profile-container"><i class="fas fa-search"></i><div class="profile-avatar"></div><i class="fas fa-chevron-down"></i></div>
+    </header>
+
+    <main class="main-content">
+        <div class="page-header">
+            <h1>Usuários</h1>
+            <button class="btn-primary"><i class="fas fa-plus"></i> Adicionar Usuário</button>
+        </div>
+
+        <div class="card">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>Data de Cadastro</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#001</td>
+                            <td>Ana Silva</td>
+                            <td>ana.silva@example.com</td>
+                            <td>05/09/2025</td>
+                            <td><span class="status status-ativo">Ativo</span></td>
+                            <td class="table-actions">
+                                <button><i class="fas fa-eye"></i></button>
+                                <button><i class="fas fa-pencil-alt"></i></button>
+                                <button><i class="fas fa-ban"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#002</td>
+                            <td>Bruno Costa</td>
+                            <td>bruno.costa@example.com</td>
+                            <td>03/09/2025</td>
+                            <td><span class="status status-ativo">Ativo</span></td>
+                            <td class="table-actions">
+                                <button><i class="fas fa-eye"></i></button>
+                                <button><i class="fas fa-pencil-alt"></i></button>
+                                <button><i class="fas fa-ban"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#003</td>
+                            <td>Carla Dias</td>
+                            <td>carla.dias@example.com</td>
+                            <td>01/09/2025</td>
+                            <td><span class="status status-inativo">Inativo</span></td>
+                            <td class="table-actions">
+                                <button><i class="fas fa-eye"></i></button>
+                                <button><i class="fas fa-pencil-alt"></i></button>
+                                <button><i class="fas fa-ban"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
